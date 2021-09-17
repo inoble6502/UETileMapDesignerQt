@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TileEditDialog</class>
+ <widget class="QDialog" name="TileEditDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>320</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>477</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Type:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="tileType">
+      <item>
+       <property name="text">
+        <string>TILE_NULL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_NORMAL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_STAIRS_UP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_STAIRS_DOWN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_TELEPORT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_DAMAGE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_POISON</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_FOG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_HOLE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_SLIDE_NORTH</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_SLIDE_EAST</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_SLIDE_SOUTH</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_SLIDE_WEST</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_ENTER_EXIT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_ELEVATOR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_RANDOM_DIR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_EVENT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_RESERVE_1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_RESERVE_2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_RESERVE_3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_RESERVE_4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>North:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="comboBoxNorth">
+      <item>
+       <property name="text">
+        <string>TILE_S_NONE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_DOORWAY</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_DOOR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_INVS_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_ILLS_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>East:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>South:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>West:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Teleport Coords:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Y:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="telCoordYSpinBox">
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>X:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="telCoordXSpinBox"/>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>Door Bools:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="QComboBox" name="doorSouth">
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QComboBox" name="doorEast">
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QComboBox" name="doorWest">
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>S:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>E:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>W:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>N:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="doorNorth">
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>Misc. Data:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="3">
+       <widget class="QSpinBox" name="misc1"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="misc4"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QSpinBox" name="misc5"/>
+      </item>
+      <item row="1" column="7">
+       <widget class="QSpinBox" name="misc7"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="misc0"/>
+      </item>
+      <item row="1" column="5">
+       <widget class="QSpinBox" name="misc6"/>
+      </item>
+      <item row="0" column="7">
+       <widget class="QSpinBox" name="misc3"/>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>2:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>0:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>1:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QSpinBox" name="misc2"/>
+      </item>
+      <item row="0" column="6">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>3:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>4:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>5:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>6:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>7:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="comboBoxEast">
+      <item>
+       <property name="text">
+        <string>TILE_S_NONE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_DOORWAY</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_DOOR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_INVS_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_ILLS_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="comboBoxSouth">
+      <item>
+       <property name="text">
+        <string>TILE_S_NONE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_DOORWAY</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_DOOR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_INVS_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_ILLS_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="comboBoxWest">
+      <item>
+       <property name="text">
+        <string>TILE_S_NONE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_DOORWAY</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_DOOR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_INVS_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_ILLS_WALL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TILE_S_RESERVE_4</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>20</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>130</y>
+     <width>101</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_23">
+      <property name="text">
+       <string>Y:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="tileCoordY">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_24">
+      <property name="text">
+       <string>X:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="tileCoordX">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushUpdate">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>190</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>TileEditDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>TileEditDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

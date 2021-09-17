@@ -1,0 +1,49 @@
+<RCC>
+    <qresource prefix="/tile_res">
+        <file>tile_gfx/type/type_damage.png</file>
+        <file>tile_gfx/type/type_damage_alt.png</file>
+        <file>tile_gfx/type/type_elevator.png</file>
+        <file>tile_gfx/type/type_entrance_exit.png</file>
+        <file>tile_gfx/type/type_event.png</file>
+        <file>tile_gfx/type/type_fog.png</file>
+        <file>tile_gfx/type/type_hole.png</file>
+        <file>tile_gfx/type/type_normal.png</file>
+        <file>tile_gfx/type/type_null.png</file>
+        <file>tile_gfx/type/type_poison.png</file>
+        <file>tile_gfx/type/type_random_direction.png</file>
+        <file>tile_gfx/type/type_reserve_1.png</file>
+        <file>tile_gfx/type/type_reserve_2.png</file>
+        <file>tile_gfx/type/type_reserve_3.png</file>
+        <file>tile_gfx/type/type_reserve_4.png</file>
+        <file>tile_gfx/type/type_slide_east.png</file>
+        <file>tile_gfx/type/type_slide_north.png</file>
+        <file>tile_gfx/type/type_slide_south.png</file>
+        <file>tile_gfx/type/type_slide_west.png</file>
+        <file>tile_gfx/type/type_stairs_down.png</file>
+        <file>tile_gfx/type/type_stairs_up.png</file>
+        <file>tile_gfx/type/type_teleport.png</file>
+        <file>tile_gfx/side/side_door.png</file>
+        <file>tile_gfx/side/side_doorway.png</file>
+        <file>tile_gfx/side/side_illus_wall.png</file>
+        <file>tile_gfx/side/side_insv_wall.png</file>
+        <file>tile_gfx/side/side_none.png</file>
+        <file>tile_gfx/side/side_reserve1.png</file>
+        <file>tile_gfx/side/side_reserve2.png</file>
+        <file>tile_gfx/side/side_reserve3.png</file>
+        <file>tile_gfx/side/side_reserve4.png</file>
+        <file>tile_gfx/side/side_wall.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/icon_blank.png</file>
+        <file>icons/icon_exit.png</file>
+        <file>icons/icon_null.png</file>
+        <file>icons/icon_redo.png</file>
+        <file>icons/icon_save.png</file>
+        <file>icons/icon_tile_add.png</file>
+        <file>icons/icon_tile_remove.png</file>
+        <file>icons/icon_undo.png</file>
+        <file>icons/icon_walled.png</file>
+        <file>icons/icon_save_both.png</file>
+        <file>icons/icon_save_img.png</file>
+    </qresource>
+</RCC>
